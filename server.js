@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 //データベースと接続
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL_RENDER || process.env.MONGO_URL)
     .then(() => {
         console.log("DBと接続中...");
     }).catch((err) => {
