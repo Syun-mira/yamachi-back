@@ -19,5 +19,5 @@ app.use(express.json());
 app.use("/api/users", userRoute);
 app.use("/api/post", postRoute);
 
-app.listen(process.env.PORT || PORT, () => console.log("サーバーが起動しました"))
+app.listen( PORT, () => console.log("サーバーが起動しました"))
 
